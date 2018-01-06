@@ -7,9 +7,12 @@ binance   = ccxt.binance({
     'secret': 'xxx',
 })
 
+
 def cointousd(amount,coinprice,usd):
+ #function to return coin price to USD
  return(amount*float(coinprice)*float(usd))
 
+#Coins you'd like to monitor, and the amount of that coin that you currently hold ( to show price value)
 coins = {'BTC/USDT':0,'TRX/BTC':877,'ADA/BTC':417}
 
 
@@ -21,6 +24,7 @@ def map(mapcoins,lastmappingcoins,coinstats):
 	return(mapping)
 
 def upordown(first,last):
+# function to determine if the new price is higher than the last
  if first>last:
   result = "Up"
  elif first<last:
