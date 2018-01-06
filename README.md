@@ -1,2 +1,2 @@
 # CoinWatch
-Building an Application to view API information coming from crypto exchanges.
+Building an Application to pull API data and display information from crypto exchanges.
